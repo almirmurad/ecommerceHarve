@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import { RouteApp } from './routes';
 import './App.css';
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+import "font-awesome/css/font-awesome.css";
+import CarrinhoContextProvider from './hooks/CarrinhoContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CarrinhoContextProvider>
+        <ToastContainer />
+        <RouteApp />
+      </CarrinhoContextProvider>
+
+    </>
+
   );
 }
 

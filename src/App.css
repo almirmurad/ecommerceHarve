@@ -1,7 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
-}
 
+}
+.flex{
+  display: flex;
+  width: 1200px;
+  background-color:#fff;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 20px;
+}
+.top{
+ background-color: #61dafb;
+ padding: 10px 0;
+ margin-bottom: 20px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +53,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+p{
+  font-size: 15px;
+  font-weight: 400;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.content{
+  padding: 20px;
+  height: 100vh;
 }
